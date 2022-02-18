@@ -10,7 +10,7 @@ function NavBar() {
   const email = require('../assets/email.png')
 
   return (
-    <Navbar expand="lg" fixed="top">
+    <Navbar expand="lg" fixed="top" className='flex-row'>
       <Container fluid>
       <Navbar.Collapse id="responsive-navbar-nav">
       <Nav>
