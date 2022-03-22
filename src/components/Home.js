@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container } from 'react-bootstrap'
+import { Card, Container, Image } from 'react-bootstrap'
 
 
 function Home() {
@@ -9,18 +9,24 @@ function Home() {
 
   return (
     <Container>
-      <Card>
+      <Image src={sign}/>
+      <Image src={me}
+      fluid="true"/>
+      {/* <Card border="dark">
         <Card.Img
-        src={sign}/>
-      </Card>
-      <Card>
+        src={sign}
+        height='300'
+        width='5'/>
         <Card.Img
+        rounded="true"
         src={me}
-        height='600'
-        width='350' />
+        varient="rounded"
+        // height='600'
+        // width='350'
+        />
         <Card.Text>Ryan Slattery</Card.Text>
         <Card.Text>Web Developer</Card.Text>
-      </Card>
+      </Card> */}
     </Container>
   )
 }
